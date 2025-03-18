@@ -1,0 +1,41 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+// YNAB-MCP Project Configuration
+
+// External References Policy
+EXTERNAL_REFERENCES: {
+  directory: ".cursor/External",
+  allowed_usage: "reference_only",
+  enforcement: "strict"
+}
+
+// Logging Requirements
+LOGGING: {
+  default_level: "DEBUG",
+  requirements: [
+    "log_function_entry_exit",
+    "log_parameters_return_values",
+    "use_structured_json_logging",
+    "include_timestamps_file_line",
+    "log_decision_points_with_reasoning",
+    "include_context_transaction_ids",
+    "capture_stack_traces_and_state",
+    "make_logs_machine_parsable"
+  ]
+}
+
+// Project Type
+PROJECT_TYPE: "garage_project",
+SECURITY: {
+  implementation: "minimal",
+  auth_requirements: "email_password_only_if_db_separation_needed"
+}
+
+// Cursor IDE Configuration
+IDE: {
+  follow_mdc_rules: true,
+  strict_enforcement: true
+} 

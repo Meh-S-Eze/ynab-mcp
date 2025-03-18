@@ -1,0 +1,15 @@
+{
+  "mcpServers": {
+    "ynab-mcp": {
+      "command": "node",
+      "args": ["build/index.js"],
+      "cwd": "/Users/home/1-Dev-Projects/ynab-mcp/ynab-mcp-server",
+      "env": {
+        "YNAB_API_TOKEN": "5YTfUea-_BgtRVWgAY_Gdpgqimho-AHD2cwg4Rza5fo",
+        "YNAB_BUDGET_ID": "1f13ab12-aed2-4c49-8c51-d6491aff6352"
+      },
+      "disabled": false,
+      "autoApprove": []
+    }
+  }
+} 
